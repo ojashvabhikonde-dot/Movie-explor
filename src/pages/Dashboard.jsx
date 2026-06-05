@@ -1,32 +1,9 @@
-import { Routes, Route } from "react-router-dom";
+import React from 'react'
 
-import Dashboard from "../pages/Dashboard";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-
-const AppRoutes = () => {
+const Dashboard = () => {
   return (
-    <Routes>
-
-    
-      <Route
-        path="/"
-        element={<Dashboard />}
-      />
-
-      
-      <Route
-        path="/login"
-        element={<Login />}
-      />
-
-      <Route
-        path="/register"
-        element={<Register />}
-      />
-
-    </Routes>
+    <div>Dashboard</div>
   )
 }
 
-export default AppRoutes;
+export default Dashboard
