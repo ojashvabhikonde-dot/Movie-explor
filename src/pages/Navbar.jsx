@@ -76,10 +76,10 @@ const Navbar = () => {
 
           {user ? (
             <button
-              // onClick={() => dispatch(logout())}
+               //onClick={() => dispatch(logout())}
               className="h-11 px-6 rounded-full border border-orange-500/20 bg-[#25171b] text-[#f6b17a] text-lg font-medium hover:bg-[#2f1c21] transition"
             >
-              Log out
+              {user.name}
             </button>
           ) : (
             <button

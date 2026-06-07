@@ -24,11 +24,11 @@ const Register = () => {
   };
 
   return (
-    <div className="    bg-[#020B2D] text-white flex">
-
+    <div className="  w-full  min-h-screen  bg-[#020B2D] text-white flex">
+ 
       {/* LEFT SIDE */}
 
-      <div className="hidden lg:flex w-1/2 flex-col justify-center px-24">
+      <div className="hidden lg:flex  flex-col justify-center px-24">
 
         <div className="mb-10">
 
@@ -38,26 +38,26 @@ const Register = () => {
 
         </div>
 
-        <h1 className="text-7xl font-black leading-tight mb-8">
+        <h1 className="text-6xl font-black leading-tight mb-5">
           Join the Cinema <br /> Community
         </h1>
 
-        <p className="text-gray-400 text-xl leading-10 max-w-xl mb-14">
+        <p className="text-gray-400 text-l leading-10 max-w-xl mb-5">
           Create an account and unlock a personalized
           movie experience like no other.
         </p>
 
-        <div className="space-y-8">
+        <div className="space-y-3">
 
-          <div className="flex gap-5">
+          <div className="flex gap-3">
 
-            <div className="text-4xl">
+            <div className="text-3xl">
               ⭐
             </div>
 
             <div>
 
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Personalized Recommendations
               </h3>
 
@@ -70,15 +70,15 @@ const Register = () => {
 
           </div>
 
-          <div className="flex gap-5">
+          <div className="flex gap-3">
 
-            <div className="text-4xl">
+            <div className="text-3xl">
               📱
             </div>
 
             <div>
 
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Sync Across Devices
               </h3>
 
@@ -91,15 +91,15 @@ const Register = () => {
 
           </div>
 
-          <div className="flex gap-5">
+          <div className="flex gap-3">
 
-            <div className="text-4xl">
+            <div className="text-3xl">
               🎁
             </div>
 
             <div>
 
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2">
                 Exclusive Features
               </h3>
 
@@ -118,7 +118,7 @@ const Register = () => {
 
       {/* RIGHT FORM */}
 
-      <div className="w-full lg:w-1/2 flex justify-center items-center p-6">
+      <div className="w-full  flex justify-center items-center p-6">
 
         <form
           onSubmit={handleSubmit(submitHandler)}
@@ -129,17 +129,17 @@ const Register = () => {
             GET STARTED
           </p>
 
-          <h1 className="text-center text-6xl font-black mb-4">
+          <h1 className="text-center text-5xl font-black mb-2">
             Create Account
           </h1>
 
-          <p className="text-center text-gray-400 mb-10">
+          <p className="text-center text-gray-400 mb-5">
             Join thousands of movie enthusiasts
           </p>
 
           {/* NAME */}
 
-          <label className="block mb-3 font-medium">
+          <label className="block mb-2 font-medium">
             Full Name
           </label>
 
@@ -152,13 +152,13 @@ const Register = () => {
             })}
           />
 
-          <p className="text-red-400 text-sm mb-5">
+          <p className="text-red-400 text-sm mb-2">
             {errors.name?.message}
           </p>
 
           {/* EMAIL */}
 
-          <label className="block mb-3 font-medium">
+          <label className="block mb-2 font-medium">
             Email Address
           </label>
 
@@ -171,13 +171,13 @@ const Register = () => {
             })}
           />
 
-          <p className="text-red-400 text-sm mb-5">
+          <p className="text-red-400 text-sm mb-2">
             {errors.email?.message}
           </p>
 
           {/* PASSWORD */}
 
-          <label className="block mb-3 font-medium">
+          <label className="block mb-2 font-medium">
             Password
           </label>
 
@@ -194,7 +194,7 @@ const Register = () => {
             })}
           />
 
-          <p className="text-red-400 text-sm mb-8">
+          <p className="text-red-400 text-sm mb-5">
             {errors.password?.message}
           </p>
 
@@ -220,7 +220,7 @@ const Register = () => {
 
             <button
               type="button"
-              className="w-full border border-orange-500 text-orange-300 py-5 rounded-full text-lg"
+              className="w-full border border-orange-500 text-orange-300 py-3 rounded-full text-lg"
             >
               Sign In
             </button>

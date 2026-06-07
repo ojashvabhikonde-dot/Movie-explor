@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Profile from "../pages/Profile";
 
 const AppRoutes = () => {
   return (
@@ -24,6 +25,17 @@ const AppRoutes = () => {
         path="/register"
         element={<Register />}
       />
+
+
+
+      <Route
+        path="/profile"
+        element={<Profile />}
+      />
+
+
+     
+
 
     </Routes>
   )

@@ -32,7 +32,7 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#020B2D] text-white flex">
+    <div className="min-h-screen w-full bg-[#020B2D] text-white flex">
 
       {/* LEFT */}
 
