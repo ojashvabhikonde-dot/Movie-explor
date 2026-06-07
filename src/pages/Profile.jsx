@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
  import {removeUser}  from "../redux/authSlice"
+import Navbar from "./Navbar";
 // import { currentUser } from "../features/authAction";
 
 const Profile = () => {
@@ -19,6 +20,8 @@ const Profile = () => {
 
   let dispatch = useDispatch();
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-[#020817] px-6 py-8 pt-30 text-white">
       <div className="mx-auto max-w-6xl space-y-7">
         {/* Profile Header */}
@@ -203,6 +206,7 @@ const Profile = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

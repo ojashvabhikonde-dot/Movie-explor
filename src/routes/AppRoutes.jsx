@@ -4,6 +4,7 @@ import Dashboard from "../pages/Dashboard";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Profile from "../pages/Profile";
+import Favorites from "../pages/Favorites";
 
 const AppRoutes = () => {
   return (
@@ -35,6 +36,10 @@ const AppRoutes = () => {
 
 
      
+      <Route
+        path="/favorites"
+        element={<Favorites />}
+      />
 
 
     </Routes>

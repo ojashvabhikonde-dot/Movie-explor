@@ -11,9 +11,6 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const { user } = useSelector((store) => store.auth);
-  const favorites = useSelector(
-   (state) => state
-);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-[black] border-b border-white/5">
@@ -97,6 +94,7 @@ const Navbar = () => {
             Get Started
           </button>
         </div>
+        
       </div>
     </header>
   );
